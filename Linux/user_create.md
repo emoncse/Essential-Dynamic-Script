@@ -27,8 +27,8 @@ sudo passwd username
 
 ** Here are some additional options you can use with useradd to customize the user creation process:
 
-***    -c "Comment": Add a comment or description for the user.
+*    -c "Comment": Add a comment or description for the user.
 ***    -G group1,group2,...: Add the user to additional supplementary groups.
-***    -e YYYY-MM-DD: Set an expiration date for the user account.
-***    -u UID: Set a specific UID (user ID) for the user.
-***    -d /path/to/home: Specify a custom home directory for the user.
+*    -e YYYY-MM-DD: Set an expiration date for the user account.
+*    -u UID: Set a specific UID (user ID) for the user.
+*    -d /path/to/home: Specify a custom home directory for the user.
