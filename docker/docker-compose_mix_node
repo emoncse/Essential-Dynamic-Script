@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: drchashi_backend_v2
+    ports:
+      - "7045:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    volumes:
+      - /var/www/dr_chashi_v2/public/upload/images:/app/public/upload/images:rw
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: drchashi_frontend_v2
+    ports:
+      - "7046:80"
+    restart: unless-stopped
